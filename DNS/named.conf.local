@@ -1,5 +1,5 @@
-zone "asa.br" {
+zone "anderson.asa.br" {
 	type master;
-	file "/etc/bind/db.asa.br";	
+	file "/etc/bind/anderson.asa.br";	
 	allow-transfer {any; };	
 };
