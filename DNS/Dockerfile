@@ -6,6 +6,9 @@ RUN apt upgrade -y
 
 RUN apt install bind9 bind9-utils dnsutils -y
 
+# Copy config files
+COPY anderson.asa.br /etc/bind 
+COPY named.conf.local /etc/bind 
 
 # Expose Ports
 EXPOSE 53/tcp
