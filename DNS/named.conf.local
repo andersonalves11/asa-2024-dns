@@ -1,6 +1,7 @@
 options {
 listen-on port 53 {any;};
-
+directory "/var/cache/bind";
+allow-query {any; };	
 };
 
 zone "anderson.asa.br" {
