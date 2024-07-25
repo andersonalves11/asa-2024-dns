@@ -1,7 +1,6 @@
 #!/bin/bash
 
 ## Build
-docker build -t proxy ./proxy
 #docker build -t mail ./mail
 docker build -t www ./www
 
