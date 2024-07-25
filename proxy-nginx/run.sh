@@ -11,8 +11,8 @@ docker network create -d bridge asa-net
 docker run -d --net=asa-net --name web01 web01
 docker run -d --net=asa-net --name web02 web02
 #docker run -d --net=asa-net --name web03 web03
-#docker run -dp 8081:80 --net=asa-net --name web01 web01
-#docker run -dp 8082:80 --net=asa-net --name web02 web02
+docker run -dp 8081:80 --net=asa-net --name web01 web01
+docker run -dp 8082:80 --net=asa-net --name web02 web02
 #docker run -dp 8083:80 --net=asa-net --name web03 web03
 docker run -dp 8090:80 --net=asa-net --name proxy proxy
 
