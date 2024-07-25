@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## Build
-docker build -t bind9 ./DNS
+docker build -t bind9 .
 
 
 ## Run
