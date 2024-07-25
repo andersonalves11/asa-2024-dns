@@ -1,12 +1,9 @@
 #!/bin/bash
 
 ## Build
-docker build -t proxy ./proxy
-#docker build -t mail ./mail
-docker build -t www ./www
+docker build -t bind9 ./DNS
+
 
 ## Run
 docker network create -d bridge asa-net
-
-docker run -d --net=asa-net --name www www
-docker run -dp 80:80 --net=asa-net --name proxy proxy
+docker run -d -p 53:53/tcp -p 53:53/udp --net=asa-net --name bind9 bind9
