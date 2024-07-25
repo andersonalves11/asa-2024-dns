@@ -7,5 +7,6 @@ allow-query { any; };
 zone "anderson.asa.br" {
 	type master;
 	file "/etc/bind/anderson.asa.br";	
-	allow-transfer { any; };	
+	allow-transfer { any; };
+	allow-query { any; };
 };
