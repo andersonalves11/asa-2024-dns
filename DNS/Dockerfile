@@ -1,10 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt update -y
-
-RUN apt upgrade -y
-
-RUN apt install bind9 bind9-utils dnsutils -y
+RUN apt-get update && apt-get upgrade install -y bind9 bind9utils dnsutils 
 
 # Copy config files
 COPY anderson.asa.br /etc/bind 
